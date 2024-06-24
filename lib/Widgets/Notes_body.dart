@@ -19,3 +19,12 @@ class NotesViewBody extends StatelessWidget {
     );
   }
 }
+
+class NotesView extends StatelessWidget {
+  const NotesView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
