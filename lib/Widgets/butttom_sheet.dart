@@ -6,13 +6,23 @@ class AddNoteButtomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.0),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: Column(children: [
-        SizedBox(
+        const SizedBox(
           height: 22,
         ),
-        customTextfield(),
+        customTextfield(
+          hint: "Title",
+          maxLines: 1,
+        ),
+        SizedBox(
+          height: 16,
+        ),
+        customTextfield(
+          hint: "content",
+          maxLines: 5,
+        ),
       ]),
     );
   }
